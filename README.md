@@ -163,10 +163,10 @@ Repos are automatically classified based on branch count:
 
 | Tier | Branch Count | Terminal Colour | What it means |
 |------|-------------|-----------------|---------------|
-| 🟢 **Healthy** | ≤ 5 | `Green` | Clean, well-maintained |
-| 🟡 **Moderate** | 6 – 15 | `Yellow` | Getting busy, keep an eye on it |
-| 🟠 **Crowded** | 16 – 30 | `Orange` | Needs pruning soon |
-| 🔴 **Bloated** | > 30 | `Red` | Overdue for a cleanup |
+| 🟢 **Healthy** | ≤ 15 | `Green` | Clean, well-maintained |
+| 🟡 **Moderate** | 16 – 50 | `Yellow` | Getting busy, keep an eye on it |
+| 🟠 **Crowded** | 51 – 70 | `Orange` | Needs pruning soon |
+| 🔴 **Bloated** | > 70 | `Red` | Overdue for a cleanup |
 | ⚪ **Archived** | — | `Grey` | Read-only, skipped in counts |
 
 ---

@@ -76,9 +76,9 @@ RL_THROTTLE  = 200    # slow down when remaining calls drop below this
 DEFAULT_ORGS = ["carter-rmn", "shyftlabs"]
 
 # Branch-count thresholds for colour coding
-THRESH_LOW    = 5     # ≤ this → green  (healthy)
-THRESH_MID    = 15    # ≤ this → yellow (moderate)
-THRESH_HIGH   = 30    # ≤ this → orange (crowded)
+THRESH_LOW    = 15    # ≤ this → green  (healthy)
+THRESH_MID    = 50    # ≤ this → yellow (moderate)
+THRESH_HIGH   = 70    # ≤ this → orange (crowded)
 # > THRESH_HIGH → red (bloated)
 
 console    = Console()
@@ -159,6 +159,7 @@ def print_banner(args: argparse.Namespace) -> None:
         f"  [dim cyan]Moderate threshold :[/] [bold white]{THRESH_LOW+1}–{THRESH_MID} branches[/]\n"
         f"  [dim cyan]Crowded threshold  :[/] [bold white]{THRESH_MID+1}–{THRESH_HIGH} branches[/]\n"
         f"  [dim cyan]Bloated threshold  :[/] [bold white]> {THRESH_HIGH} branches[/]\n"
+
         f"  [dim cyan]Workers            :[/] [bold white]{args.workers}[/]"
         + (f"\n  [dim cyan]Flags              :[/] {flags_str}" if flags_str else ""),
         border_style="bright_blue",
